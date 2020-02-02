@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Homework 2.1.3</string>
+    <string name="task_start">Start date</string>
+    <string name="task_finish">Finish date</string>
+    <string name="switch_dates">Switch places</string>
+    <string name="confirm">Confirm</string>
+    <string name="wrong_order">You have picked a day for start after the day of finish, please correct it</string>
+    <string name="chosen_dates_format">Start at %s\nFinished at %s</string>
+</resources>
