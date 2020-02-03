@@ -1,10 +1,8 @@
 package com.example.homework213;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
@@ -14,7 +12,6 @@ import android.widget.Toast;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class MainActivity extends AppCompatActivity {
@@ -97,8 +94,7 @@ public class MainActivity extends AppCompatActivity {
 			return;
 		}
 		String startString = DATE_FORMAT.format(start), finishString = DATE_FORMAT.format(finish);
-		String out = String.format(getString(R.string.chosen_dates_format),
-				startString, finishString);
+		String out = getString(R.string.chosen_dates_format, startString, finishString);
 		Toast.makeText(this, out, Toast.LENGTH_SHORT).show();
 	}
 }
